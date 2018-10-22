@@ -27,8 +27,8 @@ train_dir = './training_dataset'  # training set
 val_dir = './test_dataset' # validation set
 output_model_file = './InceptionV3.model'
 nb_classes= 2
-nb_epoch = 3
-batch_size = 20
+nb_epoch = 10
+batch_size = 50
  
 nb_train_samples = get_nb_files(train_dir)      # number of training set
 nb_classes = len(glob.glob(train_dir + "/*"))  # number of classification
