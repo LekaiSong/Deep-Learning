@@ -39,4 +39,4 @@ Additionally, the CNN.py provides a much more convenient training model because 
 
 Comparison：
 
-When the scale of training_set and test_set is not that big, you can use this simple model instead of former mature one to get a fast and high-accuracy prediction result. However, when it comes to a large scale dataset, we should pay more attention to mature training models (though it takes lots of time) since their layers structure has been already optimized so that they are capable of dealing with complex situations and filtering more details.
+When the scale of training_set and test_set is not that big, you can use this simple model instead of former mature one to get a fast and high-accuracy prediction result (both model's test accuracies are over 90%). However, when it comes to a large scale dataset, we should pay more attention to mature training models (though it takes lots of time) since their layers structure has been already optimized so that they are capable of dealing with complex situations and filtering more details.
