@@ -35,4 +35,7 @@ Secondly, run inception.py in the terminal to train the model. It's a time-consu
 
 Then, run inceptionprediction.py to test how it works for test_set. The model can predict what class the image you want to test belongs to. What you need to do is to change the iamge path in row #49. The output is the possibility of prediction which is shown as a graph as well.
 
-Additionally, the CNN.py provides a much more convenient training model because only a few typical layers such as convolutional layer and pooling layer are added. When the scale of training_set and test_set is not that big, you can use this simple model instead of former mature one to get a fast and high-accuracy prediction result. 
+Additionally, the CNN.py provides a much more convenient training model because only a few typical layers such as convolutional layer and pooling layer are added. 
+
+Comparison：
+When the scale of training_set and test_set is not that big, you can use this simple model instead of former mature one to get a fast and high-accuracy prediction result. However, when it comes to a large scale dataset, we should pay more attention to mature training models (though it takes lots of time) since their layers structure has been already optimized so that they are capable of dealing with complex situations and filtering more details.
