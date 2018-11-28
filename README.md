@@ -5,13 +5,13 @@ Deep-Learning
 We only use two kinds of flower images for our training. Thus, take roses and sunflowers as an example and meanwhile delete other 3 kinds of flower images. The whole files structure is as follows.
 
 >./Deep-Learning/
->>... <br>training_set
+>>#### ... <br>training_set
 >>>roses <br> sunflowers
->>test_set
+>>#### test_set
 >>>roses <br> sunflowers
->>training_dataset
+>>#### training_dataset
 >>>roses <br> sunflowers
->>test_dataset
+>>#### test_dataset
 >>>roses <br> sunflowers
 >>#### Ps: training_dataset and test_dataset are the folders where resized images are stored. 
 
