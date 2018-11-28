@@ -22,7 +22,7 @@ for training_image1 in training_images1:
     if is_img(os.path.splitext(training_image1)[1]): #judge if file is image types
         img = Image.open(os.path.join(training_set_path,training_image1)) 
         #print(img)
-        out = img.resize((64,64),Image.ANTIALIAS) #resize image with high-quality
+        out = img.resize((299,299),Image.ANTIALIAS) #resize image with high-quality
         #print(out)
         out.save(r'./training_dataset/roses/%03d.jpg'%i, 'jpeg')
         i += 1
@@ -36,7 +36,7 @@ for training_image2 in training_images2:
     if is_img(os.path.splitext(training_image2)[1]):
         img = Image.open(os.path.join(training_set_path,training_image2))
         #print(img)
-        out = img.resize((64,64),Image.ANTIALIAS) #resize image with high-quality
+        out = img.resize((299,299),Image.ANTIALIAS) #resize image with high-quality
         #print(out)
         out.save(r'./training_dataset/sunflowers/%03d.jpg'%j, 'jpeg')
         j += 1
@@ -50,7 +50,7 @@ for test_image1 in test_images1:
     if is_img(os.path.splitext(test_image1)[1]):
         img = Image.open(os.path.join(test_set_path,test_image1))
         #print(img)
-        out = img.resize((64,64),Image.ANTIALIAS) #resize image with high-quality
+        out = img.resize((299,299),Image.ANTIALIAS) #resize image with high-quality
         #print(out)
         out.save(r'./test_dataset/roses/%03d.jpg'%a, 'jpeg')
         a += 1
@@ -64,7 +64,7 @@ for test_image2 in test_images2:
     if is_img(os.path.splitext(test_image2)[1]):
         img = Image.open(os.path.join(test_set_path,test_image2))
         #print(img)
-        out = img.resize((64,64),Image.ANTIALIAS) #resize image with high-quality
+        out = img.resize((299,299),Image.ANTIALIAS) #resize image with high-quality
         #print(out)
         out.save(r'./test_dataset/sunflowers/%03d.jpg'%b, 'jpeg')
         b += 1
