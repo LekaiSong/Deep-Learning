@@ -9,13 +9,18 @@ We only use two kinds of flower images for our training. Thus, take roses and su
 >>>#### roses <br> sunflowers
 >>#### test_set
 >>>#### roses <br> sunflowers
+>>#### ... <br>training_dataset
+>>>#### roses <br> sunflowers
+>>#### test_dataset
+>>>#### roses <br> sunflowers
+>>#### Ps: training_dataset and test_dataset are the folders where resized images store. 
 
 ### The first two steps are trying explaining how to train a model by yourself, but if you only want to demo my pre-trained model the first two steps could be skipped.
 Firstly, run resize299.py in the terminal. For the reason that inceptionV3 model requires standard input format (size of images), we need to resize those images from both training_set and test_set into 299pixel*299pixel by default. The same as resize64.py.
 
 Secondly, run inception.py in the terminal to train the model. It's a time-consuming process which depends on what CPU and GPU you are using. Values in line from #29 to #31 represent the number of classes, number of epochs and batch size, which can also be modified as you like. As soon as it's completed, the graphs of the connection between epochs and training accuracy would be shown on the screen clearly. The trained model is saved as 'inceptionV3.model' at the same time.
 
-#### Then, run inceptionprediction.py to test how it works for test_set. The model can predict what class the image you want to test belongs to. What you need to do is to change the iamge path in row #49. The output is the possibility of prediction which is shown as a graph as well.
+#### Then, run inceptionprediction.py to test if it works for test_dataset. The model can predict what class the image you want to test belongs to. What you need to do is to change the iamge path in row #49. The output is the possibility of prediction which is shown as a graph as well.
 
 #### Additionally, the CNN.py provides a much more convenient training model because only a few typical layers such as convolutional layer and pooling layer are added. In this model, RGB images are resized into 64pixel*64pixel.
 
