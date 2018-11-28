@@ -4,15 +4,15 @@ Deep-Learning
 
 We only use two kinds of flower images for our training. Thus, take roses and sunflowers as an example and meanwhile delete other 3 kinds of flower images. The whole files structure is as follows.
 
->#### ./Deep-Learning/
->>#### ... <br>training_set
->>>#### roses <br> sunflowers
->>#### test_set
->>>#### roses <br> sunflowers
->>#### training_dataset
->>>#### roses <br> sunflowers
->>#### test_dataset
->>>#### roses <br> sunflowers
+>./Deep-Learning/
+>>... <br>training_set
+>>>roses <br> sunflowers
+>>test_set
+>>>roses <br> sunflowers
+>>training_dataset
+>>>roses <br> sunflowers
+>>test_dataset
+>>>roses <br> sunflowers
 >>#### Ps: training_dataset and test_dataset are the folders where resized images are stored. 
 
 ### The first two steps below are trying explaining how to train a model by yourself, but if you only want to demo my pre-trained model the first two steps could be skipped.
