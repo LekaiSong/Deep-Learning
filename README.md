@@ -16,15 +16,15 @@ We only use two kinds of flower images for our training. Thus, take roses and su
 >>#### Ps: training_dataset and test_dataset are the folders where resized images are stored. 
 
 ### The first two steps below are trying explaining how to train a model by yourself, but if you only want to demo my pre-trained model the first two steps could be skipped.
-Firstly, run resize299.py in the terminal. For the reason that inceptionV3 model requires standard input format (size of images), we need to resize those images from both training_set and test_set into 299pixel*299pixel by default. The same as resize64.py.
+>1) run resize299.py in the terminal. For the reason that inceptionV3 model requires standard input format (size of images), we need to resize those images from both training_set and test_set into 299pixel*299pixel by default. The same as resize64.py.
 
-Secondly, run inception.py in the terminal to train the model. It's a time-consuming process which depends on what CPU and GPU you are using. Values in line from #29 to #31 represent the number of classes, number of epochs and batch size, which can also be modified as you like. As soon as it's completed, the graphs of the connection between epochs and training accuracy would be shown on the screen clearly. The trained model is saved as 'inceptionV3.model' at the same time.
+>2) Secondly, run inception.py in the terminal to train the model. It's a time-consuming process which depends on what CPU and GPU you are using. Values in line from #29 to #31 represent the number of classes, number of epochs and batch size, which can also be modified as you like. As soon as it's completed, the graphs of the connection between epochs and training accuracy would be shown on the screen clearly. The trained model is saved as 'inceptionV3.model' at the same time.
 
-#### Then, 'python inceptionpredict.py -i path/test_image'. It can predict what class the image you test belongs to. The output are the test image and the possibility of prediction shown as a graph. 
+#### 3) 'python inceptionpredict.py -i path/test_image'. It can predict what class the image you test belongs to. The output are the test image and the possibility of prediction shown as a graph. 
 <br> Take an example. 
 >![inception_test_result](https://github.com/LekaiSong/Deep-Learning/blob/master/inception_prediction_result.png)
 
-#### Additionally, the CNN.py provides a much more convenient training model because only a few typical layers such as convolutional layer and pooling layer are added. In this model, RGB images are resized into 64pixel*64pixel.
+#### 4) the CNN.py provides a much more convenient training model because only a few typical layers such as convolutional layer and pooling layer are added. In this model, RGB images are resized into 64pixel*64pixel.
 
 ### Comparison：
 
