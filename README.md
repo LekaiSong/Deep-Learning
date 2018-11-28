@@ -9,7 +9,7 @@ We only use two kinds of flower images for our training. Thus, take roses and su
 >>>#### roses <br> sunflowers
 >>#### test_set
 >>>#### roses <br> sunflowers
->>#### ... <br>training_dataset
+>>#### training_dataset
 >>>#### roses <br> sunflowers
 >>#### test_dataset
 >>>#### roses <br> sunflowers
