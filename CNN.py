@@ -36,10 +36,17 @@ classifier.fit_generator(training_set, steps_per_epoch =500, epochs = 5, validat
 import numpy as np 
 from keras.preprocessing import image
 from PIL import Image
-img = Image.open('./u=2704567099,2328751227&fm=26&gp=0.jpg') #test image you like
+import argparse
+
+#parse arguments
+parser=argparse.ArgumentParser()
+parser.add_argument('-i','--image',required=True,help="path to resized test image")
+args = parser.parse_args()
+
+img = Image.open(args.image) #test image you like
 out = img.resize((64,64),Image.ANTIALIAS) #resize image with high-quality
-out.save(r'./test.jpg', 'jpeg')
-test_image = image.load_img('test.jpg', target_size = (64, 64)) 
+out.save(r'./CNNtest.jpg', 'jpeg')
+test_image = image.load_img('CNNtest.jpg', target_size = (64, 64)) 
 test_image = image.img_to_array(test_image) 
 test_image = np.expand_dims(test_image, axis=0) 
 result = classifier.predict(test_image) 
