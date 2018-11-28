@@ -68,3 +68,5 @@ for test_image2 in test_images2:
         #print(out)
         out.save(r'./test_dataset/sunflowers/%03d.jpg'%b, 'jpeg')
         b += 1
+
+print("resize finished")
