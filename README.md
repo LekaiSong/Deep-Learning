@@ -26,4 +26,4 @@ Secondly, run inception.py in the terminal to train the model. It's a time-consu
 
 ### Comparison：
 
-When the scale of training_set and test_set is not that big, you can use this simple model instead of former mature one to get a fast and high-accuracy prediction result (both model's test accuracies are over 90%). However, when it comes to a large scale dataset, we should pay more attention to mature training models (though it takes lots of time) since their layers structure has been already optimized so that they are capable of dealing with complex situations and filtering more details.
+When the scale of training_dataset is not that big, you can use simple CNN model instead of InceptionV3 one to get a fast and high-accuracy prediction result (both models' test accuracies are over 90%). However, when it comes to a large scale dataset, we prefer mature training models (though it takes more time) since their layers structure has been already optimized so that they are capable of dealing with complex situations and filtering more details.
