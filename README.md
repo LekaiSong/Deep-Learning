@@ -15,7 +15,7 @@ We only use two kinds of flower images for our training. Thus, take roses and su
 >>>#### roses <br> sunflowers
 >>#### Ps: training_dataset and test_dataset are the folders where resized images are stored. 
 
-### The first two steps are trying explaining how to train a model by yourself, but if you only want to demo my pre-trained model the first two steps could be skipped.
+### The first two steps below are trying explaining how to train a model by yourself, but if you only want to demo my pre-trained model the first two steps could be skipped.
 Firstly, run resize299.py in the terminal. For the reason that inceptionV3 model requires standard input format (size of images), we need to resize those images from both training_set and test_set into 299pixel*299pixel by default. The same as resize64.py.
 
 Secondly, run inception.py in the terminal to train the model. It's a time-consuming process which depends on what CPU and GPU you are using. Values in line from #29 to #31 represent the number of classes, number of epochs and batch size, which can also be modified as you like. As soon as it's completed, the graphs of the connection between epochs and training accuracy would be shown on the screen clearly. The trained model is saved as 'inceptionV3.model' at the same time.
