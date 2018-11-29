@@ -24,7 +24,7 @@ We only use two kinds of flower images for our training. Thus, take roses and su
 <br> Take an example. 
 >![inception_test_result](https://github.com/LekaiSong/Deep-Learning/blob/master/inception_prediction_result.png)
 
-#### 4. The CNN.py provides a much more convenient training model because only a few typical layers such as convolutional layer and pooling layer are added. In this model, RGB images are resized into 64pixel*64pixel.
+#### 4. The CNN.py provides a much more convenient training model because only a few typical layers such as convolutional layer and pooling layer are added. In this model, RGB images are resized into 64pixel*64pixel. <br> 'python inceptionpredict.py -i path/test_image'.
 
 ### Comparison
 
